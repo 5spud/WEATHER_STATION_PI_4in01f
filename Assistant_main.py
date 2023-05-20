@@ -250,7 +250,7 @@ if __name__ == "__main__":
             current_time = time.strftime("%d/%m/%Y %H:%M:%S", time.localtime())
             print("INITIALIZATION PROBLEM- @" + current_time)
             time.sleep(2)
-    epd = epd7in5b_V2.EPD()
+    epd = epd4in01f.EPD()
     while True:
         # Defining objects
         current_time = time.strftime("%d/%m/%Y %H:%M", time.localtime())
