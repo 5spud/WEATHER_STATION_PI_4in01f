@@ -11,7 +11,7 @@ api_key_weather = ""
 api_key_news = ""
 debug = 0
 if debug ==0:
-    import epd7in5b_V2
+    import epd4in01f
 else:
     pass
 
