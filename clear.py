@@ -1,7 +1,7 @@
-import epd7in5b_V2
+import epd4in01f
 import time
 print("Starting shut down")
-epd = epd7in5b_V2.EPD()
+epd = epd4in01f.EPD()
 epd.init()
 time.sleep(1)
 print("Clearing...")
