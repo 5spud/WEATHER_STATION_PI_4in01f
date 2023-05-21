@@ -10,16 +10,20 @@ print("Starting shut down")
 epd = epd4in01f.EPD()
 input()
 print("\n epd creation has been executed successfully.")
+# display initialisieren
 epd.init()
 input()
 print("\n init.")
 time.sleep(1)
 print("Clearing...")
+# display leeren
 epd.Clear()
-#time.sleep(2)
-#epd.init()
-# print("Exiting !")
-# doesn´t exit: epd.Dev_exit()
+# Drawing on the Horizontal image - ein Bild pro Farbe zum Darstellen auf dem Display
+           HBlackimage = Image.new('1', (epd4in01f.EPD_HEIGHT, epd4in01f.EPD_WIDTH), 255)  # 640*400
+           HRedimage = Image.new('1', (epd4in01f.EPD_HEIGHT, epd4in01f.EPD_WIDTH), 255)  # 640*400
+# zum darstellen aufruf von 
+epd.display(epd.getbuffer(HBlackimage), epd.getbuffer(HRedimage))
+
    # FRAME
    input()
 print("\nDisplay")
