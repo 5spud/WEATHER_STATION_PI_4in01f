@@ -18,7 +18,7 @@ import sys
 sys.path.append(r'lib')
 
 import signal
-import epd2in7b
+import epd4in01f
 import epdconfig
 import time
 from PIL import Image,ImageDraw,ImageFont
@@ -121,8 +121,8 @@ def main():
             epd.Clear()
             
             # Drawing on the Horizontal image
-            HBlackimage = Image.new('1', (epd2in7b.EPD_HEIGHT, epd2in7b.EPD_WIDTH), 255)  # 298*126
-            HRedimage = Image.new('1', (epd2in7b.EPD_HEIGHT, epd2in7b.EPD_WIDTH), 255)  # 298*126    
+            HBlackimage = Image.new('1', (epd4in01f.EPD_HEIGHT, epd4in01f.EPD_WIDTH), 255)  # 298*126
+            HRedimage = Image.new('1', (epd4in01f.EPD_HEIGHT, epd4in01f.EPD_WIDTH), 255)  # 298*126    
             
             print("Drawing")
             drawblack = ImageDraw.Draw(HBlackimage)
